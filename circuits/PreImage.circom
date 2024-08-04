@@ -20,4 +20,3 @@ template PreImage(n) {
 }
 
 component main{public [hashes] } = PreImage(5);
-
