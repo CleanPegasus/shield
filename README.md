@@ -1,13 +1,8 @@
-# Sample Hardhat Project
+# Shield
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+### Rareskill Circom Bootcamp Homework - 6
+Create a ZK circuit that lets you prove you know the preimage of *one* of the hashes in a list.
 
-Try running some of the following tasks:
+That is, a smart contract holds a fixed-length array of hashes (MiMC, Poseidon,…, your choice) and you submit a proof that you know the preimage to one of them.
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+Thus, your circuit takes an input of n hashes (public input) and the preimage of the hash and which hash it is (private input).
