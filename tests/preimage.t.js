@@ -57,7 +57,9 @@ describe("PreImage Test", function () {
       })
     );
 
-    console.log(poseidonHashes);
+    // console.log(poseidonHashes);
+    const poseidonHashesBigInt = poseidonHashes.map(poseidonHash => BigInt(poseidonHash));
+    console.log(poseidonHashesBigInt)
 
     await circuit.calculateWitness(
       {
